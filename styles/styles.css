@@ -24,7 +24,10 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
-
+.flex
+{
+    display: flex;
+}
  
 
 /************* site-wide text styling *************/
@@ -33,7 +36,8 @@ body {
     - first-level headings are size 48px, centered vertically and horizontally in the available space.
     - 2nd-level headings have a font size of 36px, and 12px of space below.
     - any element with the .large-text class has a font size of 24px.
-    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above), be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
+    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above),
+     be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
     - all anchors will have the underline removed and be black in colour. all anchors in the main and footer sections will be underlined in their hover-state.
     - the hover-state of .fake-button and .blue-hover elements will:
         - add an underline, 
@@ -43,6 +47,46 @@ body {
 */
 
 
+h1 
+{
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 36px;
+    padding: 12px;
+}
+
+.large-text 
+{
+    font-size: 24px;
+}
+
+.fake-button
+{
+    background-color: #E5AF42;
+    line-height: 3px;
+    border: 1px solid black;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.fake-button:hover, .blue-hover:hover
+{
+    text-decoration: underline;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -54,14 +98,41 @@ body {
 /* TO DO:
     - the header and footer will be the same mustard-yellow as the buttons.
     - the header is 150px tall.
-    - the header image is 100px wide and tall with 25px of space above, below, and on its left, and the top-level heading is centered in the remaining width.
-    - there will be 25px of space between the header and main, and 50px of space between main and footer.
-    - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
+    - the header image is 100px wide and tall with 25px of space above, 
+    below, and on its left, and the top-level heading is centered in the remaining width.
+
+    - there will be 25px of space between the header and main, 
+    and 50px of space between main and footer.
+
+    - the footer will be 60px tall, have a font-weight of 200,
+     and the text within will be centered vertically and horizontally.
 */
 
+a img
+{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+}
 
+header
+{
+    margin-bottom: 25px;
+    background-color: #E5AF42;
+    height: 150px;
+}
 
+header h1
+{
+    display: flex;
+    text-align: center;
+    width: 80%;
+}
 
+footer
+{
+    padding: 50px;
+}
 
 
 /************* index page *************/
