@@ -50,6 +50,7 @@ body {
 h1 
 {
     font-size: 48px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -58,7 +59,7 @@ h1
 h2
 {
     font-size: 36px;
-    padding: 12px;
+    margin-bottom: 12px;
 }
 
 .large-text 
@@ -70,7 +71,7 @@ h2
 {
     background-color: #E5AF42;
     line-height: 3px;
-    border: 1px solid black;
+    border: solid black 1px;
 
 }
 
@@ -131,22 +132,61 @@ header h1
 
 footer
 {
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100px;
+    font-weight: 200;
+    text-align: center;
+    background-color: #E5AF42;
 }
 
 
 /************* index page *************/
 
 /* TO-DO: 
-    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. The image will also have 50px of space below.
+    - this is a 2-column layout: text on the left, and an image on the right. 
+    The image will be 300px wide, with 25px between it and the text column, 
+    which takes up the remaining space. 
+    
+    The image will also have 50px of space below.
+      
     - the h2 on this page will have a line-height equal to the font size.
     - each paragraph on this page will have 12px of space beneath it.
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
+.index img
+{
+    display: block;
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    
+}
 
+.about-us h2
+{
+    line-height: 36px;
 
+}
+
+.about-us p
+{
+    margin-bottom: 12px;
+}
+
+.fake-button
+{
+    width: 250px;
+    margin-left: 150px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
 
 
 
