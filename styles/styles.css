@@ -204,15 +204,51 @@ footer
 
 */
 
+.booking-page
+{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
 
+.day-selector
+{
+    display: flex;
+    justify-content: center;
+}
 
+.day-selector li
+{
+    width: 60px;
+    border: 1px solid black;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0%;
+}
 
+.small-button
+{
+    border: 1px solid black;
+    padding: 2.5px;
+}
 
+.top-margin
+{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
 
+#clear-button
+{
+    margin-left:170px;
+}
 
-
-
-
+.clicked
+{
+    background-color: #E5AF42;
+}
 
 
 
@@ -226,5 +262,49 @@ footer
 */
 
 
+.contact
+{
+    height: 420px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
 
+.contact label
+{
+    width: 150px;
+    text-align: right;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.contact input
+{
+    width: 300px;
+    margin-bottom: 24px;
+
+}
+
+.contact textarea
+{
+    height: 150px;
+    width: 300px;
+}
+
+#submit-button
+{
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    width: 300px;
+    margin-top: 24px;
+    margin-left: 175px;
+    padding-left: 110px;
+}
