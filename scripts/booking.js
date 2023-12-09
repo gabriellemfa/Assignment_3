@@ -19,7 +19,7 @@ const fullButton = document.getElementById('full');
 const halfButton = document.getElementById('half'); 
 const clearButton = document.getElementById('clear-button');
 const calculatedCostElement = document.getElementById('calculated-cost');
-const weeklyCostText = document.querySelector('.large-text')
+const weeklyCostText = document.querySelector('.large-text');
 
 function handleDaySelection(event)
 {
@@ -48,7 +48,7 @@ function clearDays()
     selectedDays.forEach((dayId) =>
     {
         const element = document.getElementById(dayId);
-        element.style.backgroundColor = ''
+        element.style.backgroundColor = '';
     });
     selectedDays = [];
     calculateCost();
@@ -65,8 +65,8 @@ function handleRateChange(isFullDay)
     if (isFullDay)
     {
         currentRate = fullDayRate;
-        fullButton.classList.add('clicked')
-        halfButton.classList.remove('clicked')
+        fullButton.classList.add('clicked');
+        halfButton.classList.remove('clicked');
     } 
 
     else 
