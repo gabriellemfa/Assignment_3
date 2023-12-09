@@ -13,7 +13,7 @@ function handleSubmit(event)
 
     const thankYouMessage = document.createElement('p');
     thankYouMessage.textContent = 'Thank you for your message!';
-    thankYouMessage.style.fontSize = '24px'
+    thankYouMessage.style.fontSize = '24px';
     
     contactPage.innerHTML = '';
     contactPage.appendChild(thankYouMessage);
